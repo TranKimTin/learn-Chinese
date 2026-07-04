@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+
+  <!-- Steaming smoke -->
+  <path d="M40,25 Q36,15 42,8" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M50,25 Q46,13 52,5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M60,25 Q56,15 62,8" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Bowl Shadow -->
+  <ellipse cx="50" cy="85" rx="22" ry="5" fill="rgba(0,0,0,0.3)" />
+
+  <!-- Noodle bowl (Bottom) -->
+  <path d="M26,52 L32,76 C33,80 37,82 42,82 L58,82 C63,82 67,80 68,76 L74,52 Z" fill="url(#bowlGrad)" />
+  <!-- Bowl Base ring -->
+  <path d="M40,82 L42,86 L58,86 L60,82 Z" fill="#cbd5e1" />
+  
+  <!-- Red trim pattern on bowl -->
+  <rect x="29" y="60" width="42" height="4" fill="#dc2626" />
+
+  <!-- Noodles inside bowl (showing above rim) -->
+  <ellipse cx="50" cy="52" rx="24" ry="5" fill="#facc15" />
+  <!-- Wave noodle strands -->
+  <path d="M26,52 Q35,46 45,52 T65,52 T74,52" fill="none" stroke="#fef08a" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M29,54 Q38,48 48,54 T68,54" fill="none" stroke="#facc15" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Bowl Rim -->
+  <ellipse cx="50" cy="52" rx="24.5" ry="4.5" fill="none" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Chopsticks crossing over bowl -->
+  <g transform="rotate(-25 55 45)">
+    <!-- Chopstick 1 -->
+    <polygon points="16,36 84,32 84,35 16,40" fill="#78350f" />
+    <rect x="80" y="32" width="4" height="3" fill="#facc15" />
+    <!-- Chopstick 2 -->
+    <polygon points="16,44 84,40 84,43 16,48" fill="#78350f" />
+    <rect x="80" y="40" width="4" height="3" fill="#facc15" />
+  </g>
+</svg>

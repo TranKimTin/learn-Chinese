@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trải nghiệm Đồ họa Vector SVG - SinoLearn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(185deg, #0f172a 0%, #020617 100%);
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 28px;
+      background: linear-gradient(135deg, #6366f1 0%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 800px;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+    .label {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .sub-label {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Đồ Họa Vector SVG Nhiều Màu Sắc</h1>
+  <p>Dưới đây là các hình ảnh được vẽ hoàn toàn bằng mã nguồn SVG không cần file ảnh tĩnh.</p>
+
+  <div class="grid">
+    
+    <!-- CARD 1: QUẢ TÁO -->
+    <div class="card">
+      <svg width="120" height="120" viewBox="0 0 100 100">
+        <defs>
+          <!-- Radial Gradient cho quả táo nổi khối -->
+          <radialGradient id="appleGrad" cx="35%" cy="30%" r="65%">
+            <stop offset="0%" stop-color="#ff6b81" />
+            <stop offset="70%" stop-color="#ef4444" />
+            <stop offset="100%" stop-color="#991b1b" />
+          </radialGradient>
+          <!-- Shadow dưới quả táo -->
+          <ellipse id="shadow" cx="50" cy="92" rx="30" ry="6" fill="rgba(0,0,0,0.3)" />
+        </defs>
+        
+        <!-- Vẽ bóng đổ -->
+        <use href="#shadow" />
+        
+        <!-- Cuống quả táo -->
+        <path d="M50,25 Q53,10 65,8" fill="none" stroke="#78350f" stroke-width="4.5" stroke-linecap="round" />
+        
+        <!-- Chiếc lá màu xanh -->
+        <path d="M55,14 Q65,6 74,9 Q72,19 55,14 Z" fill="#22c55e" />
+        
+        <!-- Thân quả táo -->
+        <path d="M50,26 C43,26 38,24 33,26 C22,29 16,42 16,58 C16,77 34,90 50,90 C66,90 84,77 84,58 C84,42 78,29 67,26 C62,24 57,26 50,26 Z" fill="url(#appleGrad)" />
+        
+        <!-- Điểm sáng phản chiếu ánh sáng -->
+        <ellipse cx="32" cy="42" rx="5" ry="10" transform="rotate(-25 32 42)" fill="rgba(255,255,255,0.4)" />
+      </svg>
+      <div class="label">Quả Táo (苹果)</div>
+      <div class="sub-label">Hiệu ứng bóng đổ và chuyển màu tròn</div>
+    </div>
+
+    <!-- CARD 2: LY TRÀ NÓNG -->
+    <div class="card">
+      <svg width="120" height="120" viewBox="0 0 100 100">
+        <defs>
+          <!-- Chuyển sắc cho ly sứ -->
+          <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#14b8a6" />
+            <stop offset="50%" stop-color="#0d9488" />
+            <stop offset="100%" stop-color="#115e59" />
+          </linearGradient>
+        </defs>
+        
+        <!-- Khói bốc lên ấm áp -->
+        <path d="M40,25 Q35,15 40,5 T40,-5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5" stroke-linecap="round">
+          <animate attributeName="d" dur="3s" repeatCount="indefinite"
+            values="M40,25 Q35,15 40,5 T40,-5; M40,25 Q45,15 40,5 T40,-5; M40,25 Q35,15 40,5 T40,-5" />
+        </path>
+        <path d="M50,25 Q45,13 50,3 T50,-7" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5" stroke-linecap="round">
+          <animate attributeName="d" dur="2.5s" repeatCount="indefinite"
+            values="M50,25 Q45,13 50,3 T50,-7; M50,25 Q55,13 50,3 T50,-7; M50,25 Q45,13 50,3 T50,-7" />
+        </path>
+        <path d="M60,25 Q55,15 60,5 T60,-5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5" stroke-linecap="round">
+          <animate attributeName="d" dur="3.5s" repeatCount="indefinite"
+            values="M60,25 Q55,15 60,5 T60,-5; M60,25 Q65,15 60,5 T60,-5; M60,25 Q55,15 60,5 T60,-5" />
+        </path>
+
+        <!-- Đĩa lót ly -->
+        <ellipse cx="50" cy="85" rx="35" ry="8" fill="rgba(0,0,0,0.4)" />
+        <ellipse cx="50" cy="83" rx="32" ry="7" fill="#78350f" />
+
+        <!-- Thân ly trà -->
+        <path d="M25,35 L30,75 C31,80 35,82 40,82 L60,82 C65,82 69,80 70,75 L75,35 Z" fill="url(#cupGrad)" />
+        
+        <!-- Miệng ly trà (Nhìn từ trên hơi nghiêng) -->
+        <ellipse cx="50" cy="35" rx="25" ry="6" fill="#0f766e" />
+        <!-- Nước trà bên trong -->
+        <ellipse cx="50" cy="36" rx="23" ry="4.5" fill="#a3e635" />
+
+        <!-- Họa tiết chiếc lá trang trí màu kem nhạt -->
+        <path d="M50,50 Q55,42 60,45 Q53,53 50,50" fill="#fef08a" opacity="0.8" />
+        <path d="M50,50 Q45,42 40,45 Q47,53 50,50" fill="#fef08a" opacity="0.8" />
+        <line x1="50" y1="62" x2="50" y2="48" stroke="#fef08a" stroke-width="2" opacity="0.8" />
+      </svg>
+      <div class="label">Tách Trà (茶)</div>
+      <div class="sub-label">SVG chuyển màu tuyến tính và khói chuyển động</div>
+    </div>
+
+    <!-- CARD 3: GẤU TRÚC PANDA -->
+    <div class="card">
+      <svg width="120" height="120" viewBox="0 0 100 100">
+        <!-- Bóng mặt dưới -->
+        <ellipse cx="50" cy="92" rx="36" ry="6" fill="rgba(0,0,0,0.3)" />
+
+        <!-- Tai trái gấu trúc -->
+        <circle cx="24" cy="24" r="14" fill="#1e293b" />
+        <circle cx="24" cy="24" r="9" fill="#0f172a" />
+
+        <!-- Tai phải gấu trúc -->
+        <circle cx="76" cy="24" r="14" fill="#1e293b" />
+        <circle cx="76" cy="24" r="9" fill="#0f172a" />
+
+        <!-- Đầu tròn màu trắng sữa -->
+        <circle cx="50" cy="56" r="36" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+
+        <!-- Quầng đen mắt trái -->
+        <ellipse cx="34" cy="54" rx="11" ry="8" transform="rotate(-15 34 54)" fill="#1e293b" />
+        <!-- Tròng mắt trắng -->
+        <circle cx="35" cy="53" r="4" fill="#ffffff" />
+        <!-- Con ngươi đen -->
+        <circle cx="36" cy="53" r="2" fill="#000000" />
+
+        <!-- Quầng đen mắt phải -->
+        <ellipse cx="66" cy="54" rx="11" ry="8" transform="rotate(15 66 54)" fill="#1e293b" />
+        <!-- Tròng mắt trắng -->
+        <circle cx="65" cy="53" r="4" fill="#ffffff" />
+        <!-- Con ngươi đen -->
+        <circle cx="64" cy="53" r="2" fill="#000000" />
+
+        <!-- Má hồng dễ thương -->
+        <ellipse cx="22" cy="66" rx="6" ry="3.5" fill="#fca5a5" opacity="0.6" />
+        <ellipse cx="78" cy="66" rx="6" ry="3.5" fill="#fca5a5" opacity="0.6" />
+
+        <!-- Mũi gấu trúc -->
+        <polygon points="46,65 54,65 50,70" fill="#0f172a" />
+        
+        <!-- Miệng cười chúm chím -->
+        <path d="M46,72 Q50,75 50,72 T54,72" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+      </svg>
+      <div class="label">Gấu Trúc (熊猫)</div>
+      <div class="sub-label">Vẽ bằng các hình khối cơ bản (circle, ellipse)</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 40px; text-align: center;">
+    <button onclick="window.history.back()" style="
+      background: #6366f1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    ">← Quay lại ứng dụng</button>
+  </div>
+
+</body>
+</html>

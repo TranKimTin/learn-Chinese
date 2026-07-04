@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+  
+  <!-- Checkmark background ring -->
+  <circle cx="50" cy="50" r="34" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="6" />
+
+  <!-- Hand OK Gesture 👌 -->
+  <g transform="translate(10, 8)">
+    <!-- Arm -->
+    <path d="M40,55 L40,78" stroke="#fde047" stroke-width="12" stroke-linecap="round" />
+    
+    <!-- Index and Thumb forming Circle (O) -->
+    <circle cx="34" cy="46" r="8" fill="none" stroke="#fde047" stroke-width="6" />
+    
+    <!-- Other three fingers pointing up (K) -->
+    <path d="M42,44 L42,18" stroke="#fde047" stroke-width="5" stroke-linecap="round" />
+    <path d="M49,46 L49,20" stroke="#fde047" stroke-width="5" stroke-linecap="round" />
+    <path d="M56,49 L56,24" stroke="#fde047" stroke-width="5" stroke-linecap="round" />
+    
+    <!-- Thumb fold -->
+    <path d="M26,50 C24,46 26,40 30,40" stroke="#eab308" stroke-width="3" fill="none" stroke-linecap="round" />
+  </g>
+  
+  <!-- Sparkles -->
+  <polygon points="22,25 24,28 27,29 24,30 22,33 20,30 17,29 20,28" fill="#ffffff" />
+  <polygon points="78,70 80,73 83,74 80,75 78,78 76,75 73,74 76,73" fill="#ffffff" />
+</svg>

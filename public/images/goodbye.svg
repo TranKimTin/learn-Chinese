@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+  
+  <!-- Cloud -->
+  <path d="M15,75 C15,68 22,62 30,62 C32,62 34,63 36,64 C40,58 48,54 56,54 C66,54 74,62 75,72 C79,72 83,76 83,81 C83,86 79,90 74,90 L15,90 Z" fill="rgba(255,255,255,0.2)" />
+
+  <!-- Paper Plane ✈️ flying away -->
+  <g transform="translate(56, 18) rotate(-15)">
+    <polygon points="0,12 24,0 12,24" fill="#ffffff" />
+    <polygon points="12,24 24,0 8,16" fill="#cbd5e1" />
+    <!-- Flight dash trail -->
+    <path d="M-10,24 Q-2,20 6,16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2,2" stroke-linecap="round" />
+  </g>
+
+  <!-- Hand waving -->
+  <g transform="translate(18, 42) rotate(15)">
+    <!-- Arm -->
+    <path d="M20,50 L20,30 C20,24 24,20 30,20 C36,20 40,24 40,30 L40,50 Z" stroke="#fde047" stroke-width="8" stroke-linecap="round" fill="none" />
+    <!-- Hand base -->
+    <circle cx="30" cy="20" r="7" fill="#fde047" />
+    <!-- Fingers -->
+    <line x1="26" y1="14" x2="22" y2="8" stroke="#fde047" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="30" y1="12" x2="28" y2="5" stroke="#fde047" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="34" y1="13" x2="36" y2="6" stroke="#fde047" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Waving dash lines -->
+    <path d="M14,14 Q8,20 14,26" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

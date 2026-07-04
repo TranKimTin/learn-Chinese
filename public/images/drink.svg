@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="drinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+  
+  <!-- Glass shadow -->
+  <ellipse cx="50" cy="85" rx="16" ry="4" fill="rgba(0,0,0,0.2)" />
+
+  <!-- Glass (Back layer) -->
+  <path d="M34,35 L38,80 C38,82 42,84 46,84 L54,84 C58,84 62,82 62,80 L66,35 Z" fill="rgba(255,255,255,0.15)" stroke="#ffffff" stroke-width="2.5" />
+  
+  <!-- Drink Liquid inside glass -->
+  <path d="M36,52 L38,79 C38,80 40,82 44,82 L56,82 C60,82 62,80 62,79 L64,52 Z" fill="url(#drinkGrad)" />
+  
+  <!-- Ice cubes -->
+  <rect x="42" cy="55" width="8" height="8" rx="1" transform="rotate(15 42 55)" fill="rgba(255,255,255,0.6)" />
+  <rect x="50" cy="62" width="7" height="7" rx="1" transform="rotate(-30 50 62)" fill="rgba(255,255,255,0.6)" />
+
+  <!-- Glass Rim -->
+  <ellipse cx="50" cy="35" rx="16" ry="4" fill="none" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Straw -->
+  <path d="M46,20 L46,75" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" transform="rotate(-15 46 20)" />
+  <path d="M46,20 L46,75" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="3,6" transform="rotate(-15 46 20)" />
+  
+  <!-- Lemon slice on the rim -->
+  <circle cx="64" cy="33" r="10" fill="#facc15" />
+  <circle cx="64" cy="33" r="8" fill="#fef08a" />
+  <!-- Lemon segments -->
+  <path d="M64,33 L64,25" stroke="#facc15" stroke-width="1.5" />
+  <path d="M64,33 L64,41" stroke="#facc15" stroke-width="1.5" />
+  <path d="M64,33 L56,33" stroke="#facc15" stroke-width="1.5" />
+  <path d="M64,33 L72,33" stroke="#facc15" stroke-width="1.5" />
+</svg>

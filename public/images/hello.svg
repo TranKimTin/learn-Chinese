@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+  
+  <!-- Waving Hand 👋 -->
+  <g transform="translate(5, 5)">
+    <!-- Palm & Fingers -->
+    <path d="M42,66 L28,52 C25,49 25,44 28,41 C31,38 36,38 39,41 L43,45 L43,26 C43,22 46,19 50,19 C54,19 57,22 57,26 L57,40 L57,28 C57,24 60,21 64,21 C68,21 71,24 71,28 L71,40 L71,32 C71,28 74,25 78,25 C82,25 85,28 85,32 L85,42 L85,36 C85,32 88,29 92,29 C96,29 99,32 99,36 L99,58 C99,72 87,83 72,83 L55,83 C48,83 42,75 42,66 Z" fill="#fde047" />
+    
+    <!-- Thumb -->
+    <path d="M42,66 L30,58 C28,56 28,52 30,50 C32,48 36,48 38,50 L46,58 Z" fill="#eab308" />
+  </g>
+  
+  <!-- Motion marks -->
+  <path d="M12,40 Q6,46 12,52" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  <path d="M18,34 Q10,44 18,54" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+</svg>

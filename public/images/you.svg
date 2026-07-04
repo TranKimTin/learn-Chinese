@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#bgGrad)" />
+  
+  <!-- Face/Head -->
+  <circle cx="50" cy="45" r="20" fill="#fde047" />
+  
+  <!-- Hair (Girl style or different boy style to differentiate) -->
+  <path d="M28,45 C28,30 38,23 50,23 C62,23 72,30 72,45 C72,50 68,48 50,38 C32,48 28,50 28,45 Z" fill="#7c2d12" />
+  
+  <!-- Eyes -->
+  <circle cx="43" cy="45" r="2.5" fill="#1e293b" />
+  <circle cx="57" cy="45" r="2.5" fill="#1e293b" />
+  
+  <!-- Smile -->
+  <path d="M46,51 Q50,55 54,51" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Shirt/Body -->
+  <path d="M26,80 C26,68 36,62 50,62 C64,62 74,68 74,80 Z" fill="url(#shirtGrad)" />
+  
+  <!-- Waving Hand -->
+  <circle cx="72" cy="58" r="6" fill="#fde047" />
+  <path d="M72,58 L63,68" stroke="#fde047" stroke-width="6" stroke-linecap="round" />
+  <!-- Small motion marks for waving -->
+  <path d="M78,50 Q82,53 82,58" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+  <path d="M76,46 Q83,50 83,58" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+</svg>
