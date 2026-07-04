@@ -1,0 +1,16 @@
+{
+  "name": "SinoLearn - Học Tiếng Trung",
+  "short_name": "SinoLearn",
+  "description": "Ứng dụng học Tiếng Trung cho người Việt",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f0a1a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "./images/icons.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
